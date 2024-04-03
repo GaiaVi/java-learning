@@ -20,3 +20,18 @@ public class Main {
 
   }
 }
+
+
+public class Main {
+  public static void main(String[] args) {
+    
+    String username = "Daiga";
+
+  if (username != "Echlin") {//THIS CODE IS RUNNING IF ITS TRUE
+   System.out.println("you can come to the party");
+  }else{
+    System.out.println ("go home.");
+  }
+
+  }
+}
