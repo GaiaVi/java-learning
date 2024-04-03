@@ -51,3 +51,32 @@ public class Main {
     }
   
 }
+public class Main {
+  public static void main(String[] args) {
+    String studentName = "Anna";
+    int yearOfSchool = 12;
+    double studentAge = 17;
+    double grade = 7;
+    boolean olympicsWinner = false;
+    
+    boolean isAgeEligible = studentAge >= 18;
+    boolean isGradeEligible = grade >= 8;
+
+    if (isAgeEligible && (isGradeEligible || olympicsWinner)) {
+      System.out.println("You are accepted!");
+    } else {
+      System.out.println("You are not accepted. Reasons:");
+
+      if (!isAgeEligible) {
+        System.out.println("- You are not eligible due to age.");
+      }
+      if (!isGradeEligible && !olympicsWinner) {
+        System.out.println("- You are not eligible due to insufficient grade.");
+      }
+      
+      if (!olympicsWinner && isAgeEligible && isGradeEligible) {
+        System.out.println("- You're not eligible due to not having sufficient grades nor having won an olympics."); //this code is not correct because olympic win alone cant determine alone if you will be accepted. it comes as a bonus if your grades arent as good as they should
+      }
+    }
+  }
+}
