@@ -1,5 +1,5 @@
+```java
 
-'''java
 
 import java.util.Scanner;
 
@@ -37,4 +37,5 @@ They are best friends ever since.");
   }
 }
 
-'''
+```
+
